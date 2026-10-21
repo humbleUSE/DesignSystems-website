@@ -1,0 +1,57 @@
+@import "./styles";
+@layer components {
+	aside nav {
+		@apply scrollbar-thin scrollbar-track-bg scrollbar-thumb-brand/30 scrollbar-gutter-stable;
+		a {
+			@apply hover:bg-bg-muted/20 hover:border-l-2 hover:border-brand rounded-none focus-visible:outline-none focus-visible:ring focus-visible:ring-brand px-3 py-2;
+		}
+	}
+
+	.roadmap > p:nth-child(1) {
+		font-size: var(--text-2xs);
+		@apply tracking-widest text-fg-muted;
+	}
+	.roadmap > p:nth-child(2) {
+		@apply mt-1 font-mono text-2xl text-fg;
+	}
+
+	.f-link {
+		@apply flex flex-col gap-xs rounded-xs border border-border p-s-m transition-all duration-200 hover:border-brand hover:bg-brand/5;
+	}
+}
+
+@layer utilities {
+	.sf-hidden {
+		display: none !important;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 100%;
+		padding-inline: var(--spacing-m);
+}
+
+	@media (min-width: 1280px) {
+		.container {
+			max-width: 1280px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+
+
+
+
+@utility bg-user-theme {
+	/* Fallback to emerald green if --user-color isn't set yet */
+	background-color: var(--user-color, #10b981);
+}
+
+@utility hover-bg-user-darken {
+	&:hover {
+		/* Automatically subtracts 15% brightness from WHATEVER color the user chose! */
+		background-color: oklch(from var(--user-color, #10b981) calc(l - 0.15) c h);
+	}
+}

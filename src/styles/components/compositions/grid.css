@@ -1,0 +1,12 @@
+@layer components {
+	.grid-c {
+		display: grid;
+		grid-template-columns: repeat(
+				auto-fit,
+				minmax(var(--grid-min-item-size, 16rem)),
+				1fr
+			);
+		/* gap: var(--grid-gap, var(--space-s)); */
+		gap: var(--grid-gap, var(--space-s));
+	}
+}

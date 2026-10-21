@@ -1,0 +1,17 @@
+@layer components {
+	.sidebar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-l, 1rem);
+	}
+
+	.sidebar > :first-child {
+		flex-grow: 1;
+		flex-basis: 20rem;
+	}
+
+	.sidebar > :last-child {
+		flex-grow: 999;
+		min-width: 50%;
+	}
+}

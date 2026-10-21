@@ -1,0 +1,24 @@
+@layer components {
+	.switcher {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--switcher-gap, var(--space-s));
+		container-name: switcher;
+		container-type: inline-size;
+	}
+
+	.switcher > * {
+		flex: 1 1 0;
+		align-content: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.switcher {
+			flex-direction: column;
+			& > * {
+				flex: 1 1 100%;
+				align-content: flex-start;
+			}
+		}
+	}
+}

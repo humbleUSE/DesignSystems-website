@@ -1,0 +1,7 @@
+@layer components {
+	.wrapper {
+		max-inline-size: min(100% - 2rem, var(--wrapper-max-width));
+		padding-inline: var(--wrapper-padding-inline, var(--space-s));
+		margin-inline: auto;
+	}
+}

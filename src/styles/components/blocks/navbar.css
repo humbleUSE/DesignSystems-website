@@ -1,0 +1,4 @@
+nav > a{
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none
+    rounded-xs;
+}

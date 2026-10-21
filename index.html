@@ -1,0 +1,1271 @@
+<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <> -->
+<!doctype html>
+<html class="scrollbar-none scroll-smooth scheme-light-dark" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="./src/styles/index.css" rel="stylesheet" />
+        <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+        <title>Designsystems.one clone</title>
+    </head>
+    <body class="antialiased selection:bg-brand/10 selection:text-fg">
+        <header
+            class="sticky top-0 z-50 w-full border-b border-border bg-bg/80 backdrop-blur-md transition-all duration-100"
+        >
+            <div
+                class=": container mx-auto flex h-20 max-w-7xl items-center px-6 md:px-8"
+            >
+                <div class="flex flex-1 items-center gap-2">
+                    <a
+                        class="flex items-center gap-2.5 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                        href="/"
+                    >
+                        <img
+                            alt="DesignSystems.One Logo"
+                            class="bg-background h-8 w-8 text-fg"
+                            data-nimg="1"
+                            decoding="async"
+                            height="32"
+                            loading="lazy"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNl84MikiPgo8cmVjdCB4PSIxLjUzODQ2IiB5PSIxLjUzODQ2IiB3aWR0aD0iMTIuMzA3NyIgaGVpZ2h0PSIxMi4zMDc3IiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHJlY3QgeD0iMS41Mzg0NiIgeT0iMTMuODQ2MiIgd2lkdGg9IjEyLjMwNzciIGhlaWdodD0iMTIuMzA3NyIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHJlY3QgeD0iMS41Mzg0NiIgeT0iMjYuMTUzOCIgd2lkdGg9IjEyLjMwNzciIGhlaWdodD0iMTIuMzA3NyIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzhCMjkzNSIgc3Ryb2tlLXdpZHRoPSIzLjA3NjkyIi8+CjxyZWN0IHg9IjEzLjg0NjEiIHk9IjEzLjg0NjIiIHdpZHRoPSIxMi4zMDc3IiBoZWlnaHQ9IjEyLjMwNzciIGZpbGw9IndoaXRlIiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8cmVjdCB4PSIyNi4xNTM5IiB5PSIxMy44NDYyIiB3aWR0aD0iMTIuMzA3NyIgaGVpZ2h0PSIxMi4zMDc3IiBmaWxsPSIjOEIyOTM1IiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8cmVjdCB4PSIxMy44NDYxIiB5PSIyNi4xNTM4IiB3aWR0aD0iMTIuMzA3NyIgaGVpZ2h0PSIxMi4zMDc3IiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHJlY3QgeD0iMS41Mzg0NiIgeT0iMTMuODQ2MiIgd2lkdGg9IjEyLjMwNzciIGhlaWdodD0iMTIuMzA3NyIgZmlsbD0iIzhCMjkzNSIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHBhdGggZD0iTTI2LjE1MzkgMjYuMTUzOEgzOC40NjE2VjMwLjc2OTJDMzguNDYxNiAzNS4wMTc2IDM1LjAxNzYgMzguNDYxNSAzMC43NjkzIDM4LjQ2MTVIMjYuMTUzOVYyNi4xNTM4WiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzhCMjkzNSIgc3Ryb2tlLXdpZHRoPSIzLjA3NjkyIi8+CjxyZWN0IHg9IjEzLjg0NjEiIHk9IjEuNTM4NDYiIHdpZHRoPSIxMi4zMDc3IiBoZWlnaHQ9IjEyLjMwNzciIGZpbGw9IndoaXRlIiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8cGF0aCBkPSJNMjYuMTUzOSAxLjUzODQ2SDMwLjc2OTNDMzUuMDE3NiAxLjUzODQ2IDM4LjQ2MTYgNC45ODI0MyAzOC40NjE2IDkuMjMwNzdWMTMuODQ2MkgyNi4xNTM5VjEuNTM4NDZaIiBmaWxsPSIjOEIyOTM1IiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNl84MiI+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"
+                            style="color: transparent"
+                            width="32"
+                        />
+                        <span class="text-base font-bold tracking-tight"
+                            >designsystems<span class="font-normal"
+                                >.one</span
+                            ></span
+                        >
+                    </a>
+                </div>
+                <nav class="hidden items-center gap-10 md:flex">
+                    <a
+                        class="relative hidden items-center py-1 text-sm font-medium text-fg-muted transition-colors hover:text-fg lg:block"
+                        href="/"
+                        >Design Systems</a
+                    >
+                    <a
+                        class="font after:right:0 after:round relative py-1 text-sm font-medium text-fg transition-colors after:absolute after:right-0 after:-bottom-0.5 after:left-0 after:h-0.5 after:bg-brand"
+                        href="/"
+                        >Learn</a
+                    >
+                    <!-- <a
+                        class="relative py-1 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+                        href="/"
+                        >AI-Ready</a
+                    > -->
+                    <a
+                        class="relative py-1 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+                        href="/"
+                        >Tools</a
+                    >
+                </nav>
+                <div
+                    class="hidden flex-1 items-center justify-end gap-2 md:flex"
+                >
+                    <button
+                        aria-label="search the site"
+                        class="bg- inline-flex h-9 w-9 items-center justify-center rounded-md border border-border focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                        title="Search (≡k)"
+                        type="button"
+                    >
+                        <svg
+                            class="tabler-icon tabler-icon-search h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
+                            ></path>
+                            <path d="M21 21l-6 -6"></path>
+                        </svg>
+                    </button>
+                    <button
+                        aria-label="switch to light mode"
+                        class="relative inline-flex h-10 w-10 items-center justify-center gap-2 rounded-sm text-sm font-medium whitespace-nowrap ring-offset-bg transition-[color,background-color,border-color,opacity,transform,box-shadow] duration-200 ease-out hover:bg-brand hover:text-brand-fg focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:outline-0 active:scale-[0.95] [&_svg]:size-4 [&_svg]:shrink-0"
+                        type="button"
+                    >
+                        <svg
+                            class="tabler-icon tabler-icon-sun h-5 w-5 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path
+                                d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+                            ></path>
+                        </svg>
+                        <svg
+                            class="tabler-icon tabler-icon-moon absolute h-5 w-5 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"
+                            ></path>
+                        </svg>
+                        <span class="sr-only">Toggle theme</span>
+                    </button>
+                    <a
+                        class="inline-flex h-auto items-center justify-center gap-2 rounded bg-brand px-4 py-2 text-xs font-bold text-nowrap break-keep whitespace-nowrap text-brand-fg ring-offset-bg transition-[color,background-color,border-color,opacity,transform,box-shadow] duration-200 ease-out hover:bg-brand/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                        href=""
+                        id="home-link"
+                    >
+                        AI-READY INDEX
+                    </a>
+                </div>
+                <div
+                    class="sf-hidden flex flex-1 items-center justify-end gap-1 md:flex"
+                ></div>
+            </div>
+        </header>
+        <div id="main">
+            <div class="lg:grid lg:grid-cols-[18rem_minmax(0,1fr)]">
+                <aside class="bg-bg lg:border-r lg:border-border">
+                    <!-- <div
+                        class="bg-background sf-hidden sticky top-0 z-30 border-b border-border p-0 lg:hidden"
+                    ></div> -->
+                    <nav
+                        aria-label="Foundations navigation"
+                        class="lg:top hidden space-y-6 px-6 py-8 lg:sticky lg:top-20 lg:block lg:max-h-[calc(100vh-4rem)] lg:overflow-y-auto"
+                    >
+                        <a
+                            aria-current="page"
+                            class="text-4 mb-5 block rounded-md bg-brand/5 px-3 py-2 leading-snug font-semibold text-fg transition-colors"
+                            href="/"
+                            >Foundations · Overview</a
+                        >
+                        <div>
+                            <p
+                                class="uppercase; mb-1.5 px-3 font-mono text-xs font-bold tracking-widest text-fg-muted"
+                            >
+                                01 · Visual language
+                            </p>
+                            <ul>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Color</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Typography</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p
+                                class="uppercase; mb-1.5 px-3 font-mono text-xs font-bold tracking-widest text-fg-muted"
+                            >
+                                02 · System mechanics
+                            </p>
+                            <ul class="space-y-0.5">
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/pages/spacing.html"
+                                        >Spacing</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/pages/layout.html"
+                                        >Layout</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/pages/motion.html"
+                                        >Motion</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Duration & easing</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p
+                                class="uppercase; mb-1.5 px-3 font-mono text-xs font-bold tracking-widest text-fg-muted"
+                            >
+                                03 · PRACTICE
+                            </p>
+                            <ul>
+                                <li>
+                                    <a
+                                        class="/50 flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Principles</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Accessibility</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Voice & tone</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="flex items-baseline gap-2 px-3 py-2 text-[15px] leading-snug text-nowrap text-fg/80 transition-colors hover:text-fg"
+                                        href="/"
+                                        >Maturity model</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+                <main class="min-w-0">
+                    <div class="min-h-screen bg-bg">
+                        <section class="bg-bg-muted/30 py-10 md:py-14">
+                            <div class="container">
+                                <div
+                                    class="flex flex-col items-start gap-xs-s text-fg-muted"
+                                >
+                                    <div
+                                        class="inline-flex items-center justify-center gap-3xs uppercase"
+                                    >
+                                        <svg
+                                            class="tabler-icon tabler-icon-stack-2 h-3 w-3"
+                                            fill="none"
+                                            height="24"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12 4l-8 4l8 4l8 -4l-8 -4"
+                                            ></path>
+                                            <path d="M4 12l8 4l8 -4"></path>
+                                            <path d="M4 16l8 4l8 -4"></path>
+                                        </svg>
+                                        <span
+                                            class="text-2xs leading-0 font-bold tracking-widest text-fg-muted uppercase"
+                                            >CORE</span
+                                        >
+                                    </div>
+                                    <h1
+                                        class="text-3xl leading-[0.95] font-semibold tracking-normal hyphens-auto text-fg md:text-5xl"
+                                    >
+                                        The decisions a
+                                        <br class="hidden md:block" />system has
+                                        to lock first.
+                                    </h1>
+                                    <p
+                                        class="max-w-(--container-2xl) text-sm leading-relaxed hyphens-auto"
+                                    >
+                                        A design system is a set of constraints,
+                                        not a component library. Foundations are
+                                        the constraints — color, type, spacing,
+                                        motion, accessibility, voice, naming.
+                                        Lock them before you build a Button, and
+                                        the Button writes itself. Skip them, and
+                                        every component is a fresh argument.
+                                    </p>
+                                </div>
+                                <div
+                                    class="mt-l grid w-full grid-cols-2 gap-s font-semibold *:rounded-xs *:border *:border-border *:bg-bg *:p-xs *:uppercase md:grid-cols-4 md:gap-base"
+                                >
+                                    <div class="roadmap">
+                                        <p>Foundations</p>
+                                        <p>10</p>
+                                    </div>
+                                    <div class="roadmap">
+                                        <p>Clusters</p>
+                                        <p>03</p>
+                                    </div>
+                                    <div class="roadmap">
+                                        <p>Interactive Tools</p>
+                                        <p>06</p>
+                                    </div>
+                                    <div class="roadmap">
+                                        <p>Reading Time</p>
+                                        <p>
+                                            ~45<span class="lowercase">m</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-b border-border">
+                            <div class="container py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-l text-fg-muted lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div>
+                                        <p
+                                            class="text-xs tracking-widest uppercase"
+                                        >
+                                            How to read this section
+                                        </p>
+                                    </div>
+                                    <div class="space-y-4 text-sm">
+                                        <p>
+                                            Three clusters, ten foundations.
+                                            <strong class="text-fg"
+                                                >Visual language</strong
+                                            >
+                                            first — color and type, the layer
+                                            people argue about in design review.
+                                            <strong class="text-fg"
+                                                >System mechanics</strong
+                                            >
+                                            second — spacing, layout, motion,
+                                            easing, the invisible rules that
+                                            make everything compose.
+                                            <strong class="text-fg"
+                                                >Practice</strong
+                                            >
+                                            last — principles, accessibility,
+                                            voice, naming, the operating manual
+                                            that turns the system from a Figma
+                                            file into a way of working.
+                                        </p>
+                                        <p>
+                                            You don't need to read them in
+                                            order. If you're bootstrapping a
+                                            system from scratch, color and
+                                            spacing are the highest-leverage
+                                            starting points. If you're
+                                            inheriting one, accessibility and
+                                            naming conventions are where you'll
+                                            find the most cleanup work.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-b border-border last:border-b-0">
+                            <div class="container py-10 md:py-14">
+                                <div
+                                    class="mb-8 grid grid-cols-1 gap-8 md:mb-10 md:gap-12 lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div>
+                                        <p
+                                            class="font-mono text-xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            01 — Visual language
+                                        </p>
+                                        <h2
+                                            class="mt-3 text-2xl leading-tight font-semibold tracking-wide text-fg"
+                                        >
+                                            How the system looks
+                                        </h2>
+                                    </div>
+                                    <div class="leading-relaxed text-fg-muted">
+                                        The visible layer. Color, type, and
+                                        shape decisions that show up on every
+                                        screen. Get these calibrated and the
+                                        rest of the system has a register to
+                                        compose against.
+                                    </div>
+                                </div>
+                                <div
+                                    class="grid grid-cols-1 gap-s-m md:grid-cols-2 lg:grid-cols-2"
+                                >
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                            >
+                                                <svg
+                                                    class="tabler-icon tabler-icon-palette h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+                                                    ></path>
+                                                    <path
+                                                        d="M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+                                                    ></path>
+                                                    <path
+                                                        d="M11.5 7.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+                                                    ></path>
+                                                    <path
+                                                        d="M15.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"
+                                                    ></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-fg-muted"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3
+                                                class="mb-1 text-xl font-semibold tracking-wide text-fg"
+                                            >
+                                                Color
+                                            </h3>
+                                            <p
+                                                class="text-2xs font-semibold tracking-widest text-fg-muted uppercase"
+                                            >
+                                                Palettes, semantic tokens,
+                                                contrast
+                                            </p>
+                                        </div>
+                                        <p class="text-sm text-fg-muted">
+                                            Frameworks (Material, atomic,
+                                            HSL-based, brand-first), eleven-step
+                                            scales, semantic vs primitive
+                                            tokens, dark mode, color-blindness.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                            >
+                                                <svg
+                                                    class="tabler-icon tabler-icon-typography h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path d="M4 20l3 0"></path>
+                                                    <path d="M14 20l7 0"></path>
+                                                    <path
+                                                        d="M6.9 15l6.9 0"
+                                                    ></path>
+                                                    <path
+                                                        d="M10.2 6.3l5.8 13.7"
+                                                    ></path>
+                                                    <path
+                                                        d="M5 20l6 -16l2 0l7 16"
+                                                    ></path>
+                                                </svg>
+                                            </span>
+                                            <span class="text-fg-muted"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3
+                                                class="mb-1 text-xl font-semibold tracking-wide text-fg"
+                                            >
+                                                Typography
+                                            </h3>
+                                            <p
+                                                class="text-2xs font-semibold tracking-widest text-fg-muted uppercase"
+                                            >
+                                                Typefaces, scale, hierarchy
+                                            </p>
+                                        </div>
+                                        <p class="text-sm text-fg-muted">
+                                            Modular scales, line-height rules,
+                                            heading hierarchy, font pairing,
+                                            readability, and the interactive
+                                            type tester.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-b border-border">
+                            <div class="container py-10 md:py-14">
+                                <div
+                                    class="mb-l grid grid-cols-1 gap-s-m lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div>
+                                        <p
+                                            class="mb-3 font-mono text-xs font-semibold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            02 — System mechanics
+                                        </p>
+                                        <h2 class="text-3xl text-balance">
+                                            How the system spaces, moves, and
+                                            structures itself
+                                        </h2>
+                                    </div>
+                                    <p
+                                        class="text-sm leading-relaxed text-fg-muted"
+                                    >
+                                        The invisible layer. Spacing rhythm,
+                                        layout grids, motion budget, and easing
+                                        curves — the rules that make a hundred
+                                        screens feel like the work of one
+                                        designer instead of fifteen.
+                                    </p>
+                                </div>
+                                <div
+                                    class="grid gap-s md:grid-cols-2 lg:grid-cols-3"
+                                >
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-ruler h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M5 4h14a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-7a1 1 0 0 0 -1 1v7a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1"
+                                                    ></path>
+                                                    <path d="M4 8l2 0"></path>
+                                                    <path d="M4 12l3 0"></path>
+                                                    <path d="M4 16l2 0"></path>
+                                                    <path d="M8 4l0 2"></path>
+                                                    <path d="M12 4l0 3"></path>
+                                                    <path
+                                                        d="M16 4l0 2"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">Spacing</h3>
+                                            <p
+                                                class="text-2xs tracking-widest text-fg-muted"
+                                            >
+                                                SCALE, RHYTHM, DENSITY
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            The 4px scale anatomy, padding vs
+                                            gap vs margin, density modes,
+                                            responsive shrink, and the three
+                                            anti-patterns every team falls into.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/pages/layout.html">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-maximize h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M4 8v-2a2 2 0 0 1 2 -2h2"
+                                                    ></path>
+                                                    <path
+                                                        d="M4 16v2a2 2 0 0 0 2 2h2"
+                                                    ></path>
+                                                    <path
+                                                        d="M16 4h2a2 2 0 0 1 2 2v2"
+                                                    ></path>
+                                                    <path
+                                                        d="M16 20h2a2 2 0 0 0 2 -2v-2"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">Layout</h3>
+                                            <p
+                                                class="text-2xs tracking-widest text-fg-muted"
+                                            >
+                                                GRIDS, BREAKPOINTS, CONTAINERS
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            Twelve-column grids, breakpoint
+                                            logic, container widths, responsive
+                                            layout patterns, and when to ignore
+                                            the grid entirely.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-bolt-filled h-4 w-4 stroke-[1.5]"
+                                                    fill="currentColor"
+                                                    height="24"
+                                                    stroke="none"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M13 2l.018 .001l.016 .001l.083 .005l.011 .002h.011l.038 .009l.052 .008l.016 .006l.011 .001l.029 .011l.052 .014l.019 .009l.015 .004l.028 .014l.04 .017l.021 .012l.022 .01l.023 .015l.031 .017l.034 .024l.018 .011l.013 .012l.024 .017l.038 .034l.022 .017l.008 .01l.014 .012l.036 .041l.026 .027l.006 .009c.12 .147 .196 .322 .218 .513l.001 .012l.002 .041l.004 .064v6h5a1 1 0 0 1 .868 1.497l-.06 .091l-8 11c-.568 .783 -1.808 .38 -1.808 -.588v-6h-5a1 1 0 0 1 -.868 -1.497l.06 -.091l8 -11l.01 -.013l.018 -.024l.033 -.038l.018 -.022l.009 -.008l.013 -.014l.04 -.036l.028 -.026l.008 -.006a1 1 0 0 1 .402 -.199l.011 -.001l.027 -.005l.074 -.013l.011 -.001l.041 -.002z"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">Motion</h3>
+                                            <p
+                                                class="text-2xs tracking-widest text-fg-muted"
+                                            >
+                                                PRINCIPLES, CHOREOGRAPHY, INTENT
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            What motion is for (feedback,
+                                            continuity, hierarchy), the motion
+                                            budget, reduced-motion support, and
+                                            choreography across surfaces.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-bolt-filled h-4 w-4 stroke-[1.5]"
+                                                    fill="currentColor"
+                                                    height="24"
+                                                    stroke="none"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M13 2l.018 .001l.016 .001l.083 .005l.011 .002h.011l.038 .009l.052 .008l.016 .006l.011 .001l.029 .011l.052 .014l.019 .009l.015 .004l.028 .014l.04 .017l.021 .012l.022 .01l.023 .015l.031 .017l.034 .024l.018 .011l.013 .012l.024 .017l.038 .034l.022 .017l.008 .01l.014 .012l.036 .041l.026 .027l.006 .009c.12 .147 .196 .322 .218 .513l.001 .012l.002 .041l.004 .064v6h5a1 1 0 0 1 .868 1.497l-.06 .091l-8 11c-.568 .783 -1.808 .38 -1.808 -.588v-6h-5a1 1 0 0 1 -.868 -1.497l.06 -.091l8 -11l.01 -.013l.018 -.024l.033 -.038l.018 -.022l.009 -.008l.013 -.014l.04 -.036l.028 -.026l.008 -.006a1 1 0 0 1 .402 -.199l.011 -.001l.027 -.005l.074 -.013l.011 -.001l.041 -.002z"
+                                                    ></path></svg
+                                            ></span>
+                                            <span
+                                                class="flex gap-s text-2xs font-bold tracking-widest text-brand"
+                                                >DEEP DIVE<svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 text-fg-muted transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">
+                                                Duration & easing
+                                            </h3>
+                                            <p
+                                                class="text-2xs font-bold tracking-widest text-fg-muted"
+                                            >
+                                                THE TWO TOKENS MOTION RUNS ON
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            Five duration tiers, four standard
+                                            easing curves, cubic-bezier values,
+                                            pairing rules, and the CSS that
+                                            ships them.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-b border-border">
+                            <div class="container py-10 md:py-14">
+                                <div class="mb-l flex flex-col gap-l-xl">
+                                    <div class="space-y-4">
+                                        <p
+                                            class="font-mono text-xs font-bold tracking-wide text-fg-muted uppercase"
+                                        >
+                                            03 - PRACTICE
+                                        </p>
+                                        <h2
+                                            class="text-3xl leading-tight font-semibold text-balance"
+                                        >
+                                            How the system gets used
+                                        </h2>
+                                    </div>
+                                    <p
+                                        class="text-sm leading-relaxed text-fg-muted"
+                                    >
+                                        The operating manual. Principles people
+                                        argue from, accessibility constraints
+                                        they design against, language they write
+                                        inside, and naming patterns that keep
+                                        the token catalog from becoming a
+                                        guessing game.
+                                    </p>
+                                </div>
+                                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-s">
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-bulb h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"
+                                                    ></path>
+                                                    <path
+                                                        d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+                                                    ></path>
+                                                    <path
+                                                        d="M9.7 17l4.6 0"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">Principles</h3>
+                                            <p
+                                                class="text-2xs font-bold tracking-widest text-fg-muted"
+                                            >
+                                                WHAT THE SYSTEM STANDS FOR
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            Why principles exist, how to write
+                                            the kind that survive contact with
+                                            sprint planning, and how the
+                                            canonical systems word theirs.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-volume h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M15 8a5 5 0 0 1 0 8"
+                                                    ></path>
+                                                    <path
+                                                        d="M17.7 5a9 9 0 0 1 0 14"
+                                                    ></path>
+                                                    <path
+                                                        d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">
+                                                Accessibility
+                                            </h3>
+                                            <p
+                                                class="text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                            >
+                                                POUR, WCAG, the system-level
+                                                audit
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            Perceivable, operable,
+                                            understandable, robust. Token-level,
+                                            component-level, and
+                                            composition-level a11y. The
+                                            checklist most systems skip.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-volume h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M15 8a5 5 0 0 1 0 8"
+                                                    ></path>
+                                                    <path
+                                                        d="M17.7 5a9 9 0 0 1 0 14"
+                                                    ></path>
+                                                    <path
+                                                        d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">
+                                                Voice & tone
+                                            </h3>
+                                            <p
+                                                class="text-2xs font-bold tracking-widest text-fg-muted"
+                                            >
+                                                HOW THE PRODUCT TALKS
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            Brand voice constants, contextual
+                                            tone shifts (onboarding, error,
+                                            empty), UX copy patterns, and the
+                                            do/don't pairs that teach faster
+                                            than rules.
+                                        </p>
+                                    </a>
+                                    <a class="f-link group" href="/">
+                                        <div class="flex justify-between">
+                                            <span
+                                                class="inline-flex h-9 w-9 items-center justify-center rounded-xs border border-border bg-bg-muted/20"
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-file-text h-4 w-4 stroke-[1.5]"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M14 3v4a1 1 0 0 0 1 1h4"
+                                                    ></path>
+                                                    <path
+                                                        d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2"
+                                                    ></path>
+                                                    <path d="M9 9l1 0"></path>
+                                                    <path d="M9 13l6 0"></path>
+                                                    <path
+                                                        d="M9 17l6 0"
+                                                    ></path></svg></span
+                                            ><span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right text-muted-foreground/40 h-4 w-4 transition-all duration-200 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></span>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <h3 class="text-xl">
+                                                Naming conventions
+                                            </h3>
+                                            <p
+                                                class="text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                            >
+                                                Tokens, components, code
+                                            </p>
+                                        </div>
+                                        <p
+                                            class="text-sm leading-relaxed tracking-normal text-fg-muted"
+                                        >
+                                            Audience-first naming (designer,
+                                            developer, agent), role-based token
+                                            names, the generator, and patterns
+                                            that scale past 500 tokens.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-border not-last:border-b">
+                            <div class="container py-10 md:py-14">
+                                <div
+                                    class="space-y-3 border border-border bg-bg-subtle p-m"
+                                >
+                                    <div class="space-y-3">
+                                        <p
+                                            class="text-2xs font-bold tracking-widest text-fg-muted"
+                                        >
+                                            NEXT STEP
+                                        </p>
+                                        <h2
+                                            class="text-2xl leading-tight tracking-wide text-fg md:text-3xl"
+                                        >
+                                            Foundations are decisions. Tokens
+                                            are the artifact.
+                                        </h2>
+                                    </div>
+                                    <div class="space-y-4.5">
+                                        <p
+                                            class="max-w-[65ch] text-sm leading-relaxed text-fg-muted"
+                                        >
+                                            Once these choices are locked, the
+                                            token generator turns them into a
+                                            portable file — eleven-step scales,
+                                            type ramps, spacing units, radius
+                                            and shadow systems, all exported to
+                                            Tokens Studio, Tailwind, CSS
+                                            variables, or Style Dictionary in
+                                            one click.
+                                        </p>
+                                        <div
+                                            class="inline-flex flex-wrap gap-x-s gap-y-xs text-sm *:inline-flex *:items-center *:justify-between *:gap-2xs *:rounded-xs *:px-4 *:py-2 **:transition-all **:duration-200 *:focus-visible:ring-2 *:focus-visible:ring-brand *:focus-visible:ring-offset-2 *:focus-visible:ring-offset-bg *:focus-visible:outline-none"
+                                        >
+                                            <a
+                                                class="group bg-fg text-bg hover:bg-brand hover:text-brand-fg"
+                                                href="/"
+                                                ><span
+                                                    class="font-medium tracking-wide"
+                                                >
+                                                    Open the token
+                                                    generator</span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right h-3.5 w-3.5 text-brand group-hover:text-fg"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="4"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></a>
+                                            <a
+                                                class="group border border-fg-muted/50 bg-bg font-semibold hover:border-brand"
+                                                href="/"
+                                                ><span
+                                                    >Read the build
+                                                    playbook</span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right h-3.5 w-3.5 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer class="border-t border-border bg-bg">
+            <div
+                class="container py-10 *:not-last:border-b *:not-last:border-border md:py-14"
+            >
+                <div
+                    class="grid grid-cols-1 items-start pb-l **:text-fg-muted md:grid-cols-[1fr_auto] md:justify-between"
+                >
+                    <div class="space-y-4 text-sm">
+                        <p class="text-xs font-bold tracking-widest uppercase">
+                            DesignSystems.One
+                        </p>
+                        <p class="max-w-md leading-relaxed">
+                            A curated gallery of 74 real-world design systems,
+                            foundations and guidelines from fourteen years of
+                            practice, plus free interactive tools.
+                        </p>
+                    </div>
+                    <nav aria-label="Footer" class="space-y-4 **:font-sans">
+                        <p class="text-sm font-bold tracking-widest uppercase">
+                            SITE
+                        </p>
+                        <ul
+                            class="block w-max space-y-2 font-thin **:leading-tight **:transition-colors **:duration-200 **:hover:text-fg"
+                        >
+                            <li><a href="/">Tools</a></li>
+                            <li><a href="/">Design Systems</a></li>
+                            <li><a href="/">Foundations</a></li>
+                            <li><a href="/">Glossary</a></li>
+                            <li><a href="/">Registry</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Support the project</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div
+                    class="flex w-full flex-col items-center justify-center gap-s pt-m text-xs text-fg-muted md:flex-row md:justify-between"
+                >
+                    <p>
+                        DesignSystems.One © 2026 · Built by
+                        <a
+                            class="font-mono font-semibold tracking-wide text-fg capitalize underline decoration-fg-muted/40 underline-offset-2 transition-all hover:text-brand hover:decoration-brand hover:underline-offset-4"
+                            href="/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >Usifo Emmanuel Sunday</a
+                        >
+                    </p>
+                    <p>Design systems, explained.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

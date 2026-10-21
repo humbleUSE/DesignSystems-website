@@ -1,0 +1,27 @@
+:root {
+	/* ===== Typography ===== */
+	/* Step -3: 9.2593px → 10.24px */
+	--step--3: clamp(0.5787rem, 0.5568rem + 0.0975vw, 0.64rem);
+	/* Step -2: 11.1111px → 12.8px */
+	--step--2: clamp(0.6944rem, 0.6567rem + 0.1679vw, 0.8rem);
+	/* Step -1: 13.3333px → 16px */
+	--step--1: clamp(0.8333rem, 0.7737rem + 0.2651vw, 1rem);
+	/* Step 0: 16px → 20px */
+	--step-0: clamp(1rem, 0.9105rem + 0.3976vw, 1.25rem);
+	/* Step 1: 19.2px → 25px */
+	--step-1: clamp(1.2rem, 1.0703rem + 0.5765vw, 1.5625rem);
+	/* Step 2: 23.04px → 31.25px */
+	--step-2: clamp(1.44rem, 1.2564rem + 0.8161vw, 1.9531rem);
+	/* Step 3: 27.648px → 39.0625px */
+	--step-3: clamp(1.728rem, 1.4727rem + 1.1346vw, 2.4414rem);
+	/* Step 4: 33.1776px → 48.8281px */
+	--step-4: clamp(2.0736rem, 1.7236rem + 1.5557vw, 3.0518rem);
+	/* Step 5: 39.8131px → 61.0352px */
+	--step-5: clamp(2.4883rem, 2.0137rem + 2.1095vw, 3.8147rem);
+	/* Step 6: 47.7757px → 76.2939px */
+	--step-6: clamp(2.986rem, 2.3482rem + 2.8348vw, 4.7684rem);
+	/* Step 7: 57.3309px → 95.3674px */
+	--step-7: clamp(3.5832rem, 2.7325rem + 3.781vw, 5.9605rem);
+	/* Step 8: 68.7971px → 119.2093px */
+	--step-8: clamp(4.2998rem, 3.1723rem + 5.0112vw, 7.4506rem);
+}

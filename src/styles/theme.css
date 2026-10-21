@@ -1,0 +1,131 @@
+@layer theme {
+	@theme inline {
+		--font-sans: "Figtree", "Inter", system-ui, sans-serif;
+		--font-mono:
+			"Cascadia Mono", "Jetbrains mono", ui-monospace, SFMono-Regular, Menlo,
+			Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		--font-heading: "Clash Display", "Space Grotesk", system-ui, sans-serif;
+
+		--color-bg: var(--bg);
+		--color-bg-subtle: oklch(from var(--bg-subtle) l c h / 0.29);
+		--color-bg-muted: var(--bg-muted);
+		--color-fg: var(--fg);
+		--color-fg-muted: var(--fg-muted);
+		--color-fg-subtle: var(--fg-subtle);
+		--color-border: var(--border);
+		--color-border-strong: var(--border-strong);
+		--color-brand: var(--brand);
+		--color-brand-hover: var(--brand-hover);
+		--color-brand-active: var(--brand-active);
+		--color-brand-fg: #ffffff;
+		--color-brand-subtle: oklch(from var(--brand-subtle) l c h / 0.2);
+		--color-accent: var(--accent);
+		--color-accent-fg: #ffffff;
+		--color-ring: var(--ring);
+
+		--color-success: var(--success);
+		--color-success-fg: var(--success-fg);
+		--color-warning: var(--warning);
+		--color-warning-fg: var(--warning-fg);
+		--color-error: var(--error);
+		--color-error-fg: var(--error-fg);
+		--color-info: var(--info);
+		--color-info-fg: var(--info-fg);
+
+		--color-card: var(--card);
+		--color-card-fg: var(--card-fg);
+		--color-card-border: var(--card-border);
+
+		/** ===== Semantic aliases: font-size ===== */
+		/* Step -3: 9.2593px → 10.24px */
+		--text-2xs: var(--step--3);
+		--text-xsmall: var(--text-2xs);
+
+		/* Step -2: 11.1111px → 12.8px */
+		--text-xs: var(--step--2);
+		--text-caption: var(--text-xs);
+
+		/* Step -1: 13.3333px → 16px */
+		--text-sm: var(--step--1);
+		--text-small: var(--text-sm);
+
+		/* Step 0: 16px → 20px */
+		--text-base: var(--step-0);
+		--text-body: var(--text-base);
+
+		/* Step 1: 19.2px → 25px */
+		--text-lg: var(--step-1);
+		--text-h6: var(--text-lg);
+
+		/* Step 2: 23.04px → 31.25px */
+		--text-xl: var(--step-2);
+		--text-h5: var(--text-xl);
+
+		/* Step 3: 27.648px → 39.0625px */
+		--text-2xl: var(--step-3);
+		--text-h4: var(--text-2xl);
+
+		/* Step 4: 33.1776px → 48.8281px */
+		--text-3xl: var(--step-4);
+		--text-h3: var(--text-3xl);
+
+		/* Step 5: 39.8131px → 61.0352px */
+		--text-4xl: var(--step-5);
+		--text-h2: var(--text-4xl);
+
+		/* Step 6: 47.7757px → 76.2939px */
+		--text-5xl: var(--step-6);
+		--text-h1: var(--text-5xl);
+
+		/* Step 7: 57.3309px → 95.3674px */
+		--text-6xl: var(--step-7);
+
+		/* Step 8: 68.7971px → 119.2093px */
+		--text-7xl: var(--step-8);
+
+		/** ===== Semantic aliases: Spaces ===== */
+		/* Space 3xs: 4px → 5px */
+		--spacing-3xs: var(--space-3xs);
+		/* Space 2xs: 8px → 9px */
+		--spacing-2xs: var(--space-2xs);
+		/* Space xs: 12px → 14px */
+		--spacing-xs: var(--space-xs);
+		/* Space s: 16px → 18px */
+		--spacing-s: var(--space-s);
+		--spacing-base: var(--space-s);
+		/* Space m: 24px → 27px */
+		--spacing-m: var(--space-m);
+		/* Space l: 32px → 36px */
+		--spacing-l: var(--space-l);
+		/* Space xl: 48px → 54px */
+		--spacing-xl: var(--space-xl);
+		/* Space 2xl: 64px → 72px */
+		--spacing-2xl: var(--space-2xl);
+		/* Space 3xl: 96px → 108px */
+		--spacing-3xl: var(--space-3xl);
+
+		/* One-up pairs */
+		/* Space 3xs-2xs: 4px → 9px */
+		--spacing-3xs-2xs: var(--space-3xs-2xs);
+		/* Space 2xs-xs: 8px → 14px */
+		--spacing-2xs-xs: var(--space-2xs-xs);
+		/* Space xs-s: 12px → 18px */
+		--spacing-xs-s: var(--space-xs-s);
+		/* Space s-m: 16px → 27px */
+		--spacing-s-m: var(--space-s-m);
+		/* Space m-l: 24px → 36px */
+		--spacing-m-l: var(--space-m-l);
+		/* Space l-xl: 32px → 54px */
+		--spacing-l-xl: var(--space-l-xl);
+		/* Space xl-2xl: 48px → 72px */
+		--spacing-xl-2xl: var(--space-xl-2xl);
+		/* Space 2xl-3xl: 64px → 108px */
+		--spacing-2xl-3xl: var(--space-2xl-3xl);
+
+		/* Custom pairs */
+		/* Space s-l: 16px → 40px */
+		--spacing-s-l: var(--space-s-l);
+		/* Space 2xs-s: 8px → 20px */
+		--spacing-2xs-s: var(--space-2xl-s);
+	}
+}

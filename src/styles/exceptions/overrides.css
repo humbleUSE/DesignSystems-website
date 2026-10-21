@@ -1,0 +1,16 @@
+@layer exceptions {
+    .stack[data-space=tight]{
+        --stack-space:var(--spacing-xs)
+    }
+    .stack[data-space=loose]{
+        --stack-space:var(--spacing-l)
+    }
+    
+    .stack[data-space=xl]{
+        --stack-space:var(--spacing-xl)
+    }
+    
+	.cluster[data-direction="column"] {
+		flex-direction: column;
+	}
+}

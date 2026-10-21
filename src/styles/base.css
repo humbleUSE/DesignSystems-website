@@ -1,0 +1,48 @@
+@layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-heading);
+		font-weight: 600;
+		@apply hyphens-none text-balance;
+	}
+
+	body {
+		font-family: var(--font-sans);
+	}
+
+	p {
+		@apply max-w-[65ch];
+	}
+
+	h1 {
+		@apply text-3xl leading-[0.95] font-semibold tracking-normal hyphens-auto text-fg md:text-5xl;
+	}
+
+	h2 {
+		@apply text-2xl leading-tight font-semibold tracking-wide text-fg;
+	}
+	h3 {
+		@apply text-xl font-semibold text-fg;
+	}
+
+	.fg-success-header {
+		color: oklch(0.7 0.2 150 / 1);
+	}
+
+	.border-success-rule {
+		border: oklch(0.7 0.2 150 / 0.5);
+	}
+
+	.fg-error-header {
+		color: oklch(0.6 0.23 27.25 / 1);
+	}
+
+
+	.border-error-rule {
+		border: oklch(0.6 0.23 27.25 / 0.5);
+	}
+}

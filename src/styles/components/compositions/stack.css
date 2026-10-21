@@ -1,0 +1,7 @@
+@layer components {
+	.stack {
+		display: flex;
+		flex-direction: column;
+		gap: var(--stack-space, var(--space-s));
+	}
+}

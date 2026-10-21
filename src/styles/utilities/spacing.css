@@ -1,0 +1,20 @@
+@utility flow-gap-* {
+	--flow-gap: --value(--spacing-*);
+}
+
+@utility stack-gap-* {
+	--stack-gap: --value(--spacing-*);
+}
+
+@utility cluster-gap-* {
+	--cluster-gap: --value(--spacing-*);
+}
+@utility switcher-gap-* {
+	--switcher-gap: --value(--spacing-*);
+}
+@utility wrapper-max-width-* {
+	--wrapper-max-width: --value([length]);
+}
+@utility wrapper-padding-inline-* {
+	--wrapper-padding-inline: --value([length]);
+}

@@ -1,0 +1,5 @@
+@layer components {
+	.flow > * + * {
+		margin-block-start: var(--flow-gap, var(--space-s, ));
+	}
+}

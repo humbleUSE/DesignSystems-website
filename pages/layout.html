@@ -1,0 +1,1644 @@
+<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <e> -->
+<!doctype html>
+<html class="scrollbar-none scheme-light-dark" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="../src/styles/index.css" rel="stylesheet" /><link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+        <title>Layout</title>
+    </head>
+    <body
+        class="bg-bg font-sans antialiased selection:bg-brand/30 selection:text-fg"
+    >
+        <header
+            class="sticky top-0 z-50 w-full border-b border-border bg-bg/80 backdrop-blur-md transition-all duration-100"
+        >
+            <div
+                class=": container mx-auto flex h-20 items-center px-6 md:px-8"
+            >
+                <div class="flex flex-1 items-center gap-2">
+                    <a
+                        class="flex items-center gap-2.5 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                        href="/"
+                    >
+                        <img
+                            alt="DesignSystems.One Logo"
+                            class="bg-background h-8 w-8 text-fg"
+                            data-nimg="1"
+                            decoding="async"
+                            height="32"
+                            loading="lazy"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNl84MikiPgo8cmVjdCB4PSIxLjUzODQ2IiB5PSIxLjUzODQ2IiB3aWR0aD0iMTIuMzA3NyIgaGVpZ2h0PSIxMi4zMDc3IiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHJlY3QgeD0iMS41Mzg0NiIgeT0iMTMuODQ2MiIgd2lkdGg9IjEyLjMwNzciIGhlaWdodD0iMTIuMzA3NyIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHJlY3QgeD0iMS41Mzg0NiIgeT0iMjYuMTUzOCIgd2lkdGg9IjEyLjMwNzciIGhlaWdodD0iMTIuMzA3NyIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzhCMjkzNSIgc3Ryb2tlLXdpZHRoPSIzLjA3NjkyIi8+CjxyZWN0IHg9IjEzLjg0NjEiIHk9IjEzLjg0NjIiIHdpZHRoPSIxMi4zMDc3IiBoZWlnaHQ9IjEyLjMwNzciIGZpbGw9IndoaXRlIiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8cmVjdCB4PSIyNi4xNTM5IiB5PSIxMy44NDYyIiB3aWR0aD0iMTIuMzA3NyIgaGVpZ2h0PSIxMi4zMDc3IiBmaWxsPSIjOEIyOTM1IiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8cmVjdCB4PSIxMy44NDYxIiB5PSIyNi4xNTM4IiB3aWR0aD0iMTIuMzA3NyIgaGVpZ2h0PSIxMi4zMDc3IiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHJlY3QgeD0iMS41Mzg0NiIgeT0iMTMuODQ2MiIgd2lkdGg9IjEyLjMwNzciIGhlaWdodD0iMTIuMzA3NyIgZmlsbD0iIzhCMjkzNSIgc3Ryb2tlPSIjOEIyOTM1IiBzdHJva2Utd2lkdGg9IjMuMDc2OTIiLz4KPHBhdGggZD0iTTI2LjE1MzkgMjYuMTUzOEgzOC40NjE2VjMwLjc2OTJDMzguNDYxNiAzNS4wMTc2IDM1LjAxNzYgMzguNDYxNSAzMC43NjkzIDM4LjQ2MTVIMjYuMTUzOVYyNi4xNTM4WiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iIzhCMjkzNSIgc3Ryb2tlLXdpZHRoPSIzLjA3NjkyIi8+CjxyZWN0IHg9IjEzLjg0NjEiIHk9IjEuNTM4NDYiIHdpZHRoPSIxMi4zMDc3IiBoZWlnaHQ9IjEyLjMwNzciIGZpbGw9IndoaXRlIiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8cGF0aCBkPSJNMjYuMTUzOSAxLjUzODQ2SDMwLjc2OTNDMzUuMDE3NiAxLjUzODQ2IDM4LjQ2MTYgNC45ODI0MyAzOC40NjE2IDkuMjMwNzdWMTMuODQ2MkgyNi4xNTM5VjEuNTM4NDZaIiBmaWxsPSIjOEIyOTM1IiBzdHJva2U9IiM4QjI5MzUiIHN0cm9rZS13aWR0aD0iMy4wNzY5MiIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNl84MiI+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"
+                            style="color: transparent"
+                            width="32"
+                        />
+                        <span class="text-base font-bold tracking-tight"
+                            >designsystems<span class="font-normal"
+                                >.one</span
+                            ></span
+                        >
+                    </a>
+                </div>
+                <nav class="hidden items-center gap-10 md:flex">
+                    <a
+                        class="relative hidden items-center py-1 text-sm font-medium text-fg-muted transition-colors hover:text-fg lg:block"
+                        href="/"
+                        >Design Systems</a
+                    >
+                    <a
+                        class="font after:right:0 after:round relative py-1 text-sm font-medium text-fg transition-colors after:absolute after:right-0 after:-bottom-0.5 after:left-0 after:h-0.5 after:bg-brand"
+                        href="/"
+                        >Learn</a
+                    >
+                    <!-- <a
+                        class="relative py-1 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+                        href="/"
+                        >AI-Ready</a
+                    > -->
+                    <a
+                        class="relative py-1 text-sm font-medium text-fg-muted transition-colors hover:text-fg"
+                        href="/"
+                        >Tools</a
+                    >
+                </nav>
+                <div
+                    class="hidden flex-1 items-center justify-end gap-2 md:flex"
+                >
+                    <button
+                        aria-label="search the site"
+                        class="bg- inline-flex h-9 w-9 items-center justify-center rounded-md border border-border focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                        title="Search (≡k)"
+                        type="button"
+                    >
+                        <svg
+                            class="tabler-icon tabler-icon-search h-4 w-4"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
+                            ></path>
+                            <path d="M21 21l-6 -6"></path>
+                        </svg>
+                    </button>
+                    <button
+                        aria-label="switch to light mode"
+                        class="relative inline-flex h-10 w-10 items-center justify-center gap-2 rounded-sm text-sm font-medium whitespace-nowrap ring-offset-bg transition-[color,background-color,border-color,opacity,transform,box-shadow] duration-200 ease-out hover:bg-brand hover:text-brand-fg focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:outline-0 active:scale-[0.95] [&_svg]:size-4 [&_svg]:shrink-0"
+                        type="button"
+                    >
+                        <svg
+                            class="tabler-icon tabler-icon-sun h-5 w-5 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path
+                                d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+                            ></path>
+                        </svg>
+                        <svg
+                            class="tabler-icon tabler-icon-moon absolute h-5 w-5 scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
+                            fill="none"
+                            height="24"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"
+                            ></path>
+                        </svg>
+                        <span class="sr-only">Toggle theme</span>
+                    </button>
+                    <a
+                        class="inline-flex h-auto items-center justify-center gap-2 rounded bg-brand px-4 py-2 text-xs font-bold text-nowrap break-keep whitespace-nowrap text-brand-fg ring-offset-bg transition-[color,background-color,border-color,opacity,transform,box-shadow] duration-200 ease-out hover:bg-brand/85 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg focus-visible:outline-none"
+                        href="/"
+                        id="home-link"
+                    >
+                        AI-READY INDEX
+                    </a>
+                </div>
+                <div
+                    class="sf-hidden flex flex-1 items-center justify-end gap-1 md:flex"
+                ></div>
+            </div>
+        </header>
+        <div id="main">
+            <div class="block lg:grid lg:grid-cols-[18rem_minmax(0,1fr)]">
+                <aside class="hidden lg:block lg:border-r lg:border-border">
+                    <nav
+                        aria-label="Foundations navigation"
+                        class="sticky top-20 space-y-4 px-6 py-8"
+                    >
+                        <div class="space-y-1">
+                            <a
+                                class="inline-flex items-center justify-center gap-1 pl-0 text-fg-muted"
+                                href="/index.html"
+                                ><svg
+                                    class="tabler-icon tabler-icon-arrow-left h-3.5 w-3.5"
+                                    fill="none"
+                                    height="24"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M5 12l14 0"></path>
+                                    <path d="M5 12l6 6"></path>
+                                    <path d="M5 12l6 -6"></path></svg
+                                ><span>Foundations</span></a
+                            >
+                            <div class="text-body font-semibold">Layout</div>
+                        </div>
+                        <div class="space-y-3">
+                            <div
+                                class="font-mono text-xs tracking-widest text-fg-muted"
+                            >
+                                ON THIS PAGE
+                            </div>
+                            <ul class="space-y-4">
+                                <li><a href="/">Why a grid</a></li>
+                                <li><a href="/">Twelve columns</a></li>
+                                <li><a href="/">Breakpoints</a></li>
+                                <li><a href="/">Container widths</a></li>
+                                <li><a href="/">Composition primitives</a></li>
+                                <li><a href="/">Anti-patterns</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+                <main class="min-w-0">
+                    <div
+                        class="min-h-screen bg-bg *:border-border *:not-first:border-t"
+                    >
+                        <section class="md:14 bg-bg-muted/30 py-10">
+                            <div class="container">
+                                <div class="flex flex-col gap-s">
+                                    <a
+                                        class="inline-flex items-center gap-2"
+                                        href="/"
+                                        ><svg
+                                            class="tabler-icon tabler-icon-layout-grid h-3 w-3 text-fg-muted"
+                                            fill="none"
+                                            height="24"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
+                                            ></path>
+                                            <path
+                                                d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
+                                            ></path>
+                                            <path
+                                                d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
+                                            ></path>
+                                            <path
+                                                d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"
+                                            ></path></svg
+                                        ><span
+                                            class="text-2xs leading-none font-bold tracking-widest text-fg-muted uppercase"
+                                            >Foundations · System mechanics
+                                        </span></a
+                                    >
+                                    <h1
+                                        class="md:text-5x text-3xl leading-[0.95] font-semibold tracking-normal hyphens-auto text-fg"
+                                    >
+                                        The grid that
+                                        <br class="hidden md:block" />
+                                        holds the page
+                                    </h1>
+                                    <p
+                                        class="max-w-(--container-2xl) text-sm leading-relaxed hyphens-auto text-fg-muted"
+                                    >
+                                        Layout is the contract between a screen
+                                        and the components on it. Get the grid,
+                                        the breakpoints, and the four
+                                        composition primitives right — and every
+                                        page reads as the work of one team
+                                        instead of fifty.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="px-4 py-6">
+                            <div
+                                class="container flex flex-wrap gap-s text-xs *:inline-flex *:items-center"
+                            >
+                                <a
+                                    class="text-2xs font-semibold tracking-widest text-fg-muted"
+                                    href="/"
+                                    >ON THIS PAGE</a
+                                >
+                                <a href="/">Why a grid</a
+                                ><a href="/">Twelve columns</a
+                                ><a href="/">Breakpoints</a
+                                ><a href="/">Containers widths</a
+                                ><a href="/">Composition primitives</a
+                                ><a href="/">Anti-patterns</a>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="container"></div>
+                        </section>
+                        <section>
+                            <div class="container py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-m lg:grid lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div class="space-y-4">
+                                        <p
+                                            class="font-mono text-2xs font-bold tracking-widest text-fg-muted"
+                                        >
+                                            01 - WHY A GRID
+                                        </p>
+                                        <h2>
+                                            Constraint is what makes<br
+                                                class="hidden md:block"
+                                            />
+                                            composition possible.
+                                        </h2>
+                                    </div>
+
+                                    <div
+                                        class="space-y-4 text-fg-muted *:text-sm *:leading-relaxed"
+                                    >
+                                        <p>
+                                            A grid is a set of vertical lines
+                                            you commit to using. Twelve is the
+                                            default because it divides cleanly
+                                            into 2, 3, 4, and 6 — every common
+                                            layout (full-bleed, halves, thirds,
+                                            quarters) snaps to it without
+                                            remainder. The constraint isn't a
+                                            limitation; it's the reason ten
+                                            people can ship pages that look like
+                                            one designer made them.
+                                        </p>
+                                        <p>
+                                            The grid lives at the page level.
+                                            Components don't care about columns
+                                            — they care about the parent that
+                                            places them. Stack, Cluster, Grid,
+                                            and Sidebar are the four primitives
+                                            that turn columns into composition.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container space-y-10 py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-m lg:grid lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div class="space-y-4">
+                                        <p
+                                            class="font-mono text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            02 — Twelve columns
+                                        </p>
+                                        <h2>Twelve divides into everything.</h2>
+                                    </div>
+
+                                    <div
+                                        class="space-y-4 text-fg-muted *:text-sm *:leading-relaxed"
+                                    >
+                                        <p>
+                                            The twelve-column grid is convention
+                                            because it composes well: 12 ÷ 2 =
+                                            halves, ÷ 3 = thirds, ÷ 4 =
+                                            quarters, ÷ 6 = sixths. Almost every
+                                            editorial, marketing, and product
+                                            layout maps to one of these splits —
+                                            and 12-column markup reads as intent
+                                            (col-span-8 + col-span-4), not as
+                                            math.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <figure class="flex flex-col gap-s">
+                                    <div
+                                        class="flex flex-col divide-y divide-border border border-border *:px-6 *:py-4"
+                                    >
+                                        <div
+                                            class="flex items-center justify-between bg-bg-muted/30 font-mono text-2xs text-fg-muted"
+                                        >
+                                            <span
+                                                class="font-bold tracking-widest uppercase"
+                                                >12-column grid · gutter
+                                                32px</span
+                                            ><span>1200px container</span>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-12 grid-rows-4 gap-3xs text-sm *:p-0.5 **:grid **:h-12 **:place-items-center **:font-mono md:gap-2xs [&>.bg]:border [&>.bg]:border-brand/70 [&>.bg]:bg-brand/10 [&>.bg]:max-sm:text-2xs [&>.neutral]:bg-(--color-neutral-400)"
+                                        >
+                                            <div class="bg">1</div>
+                                            <div class="bg">2</div>
+                                            <div class="bg">3</div>
+                                            <div class="bg">4</div>
+                                            <div class="bg">5</div>
+                                            <div class="bg">6</div>
+                                            <div class="bg">7</div>
+                                            <div class="bg">8</div>
+                                            <div class="bg">9</div>
+                                            <div class="bg">10</div>
+                                            <div class="bg">11</div>
+                                            <div class="bg">12</div>
+                                            <div
+                                                class="col-span-8 bg-(--color-neutral-200) text-bg"
+                                            >
+                                                col-span-8
+                                            </div>
+                                            <div
+                                                class="neutral col-span-4 text-bg"
+                                            >
+                                                col-span-4
+                                            </div>
+                                            <div
+                                                class="neutral col-span-4 text-bg"
+                                            >
+                                                4
+                                            </div>
+                                            <div
+                                                class="neutral col-span-4 text-bg"
+                                            >
+                                                4
+                                            </div>
+                                            <div
+                                                class="neutral col-span-4 text-bg"
+                                            >
+                                                4
+                                            </div>
+                                            <div
+                                                class="neutral col-span-3 text-bg"
+                                            >
+                                                3
+                                            </div>
+                                            <div class="bg col-span-6">
+                                                6 (centered prose)
+                                            </div>
+                                            <div
+                                                class="neutral col-span-3 text-bg"
+                                            >
+                                                3
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <figcaption class="text-sm text-fg-muted">
+                                        Twelve cells, three composition
+                                        examples: 8+4 · 4+4+4 · 3+6+3.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container space-y-10 py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-m lg:grid lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div class="space-y-4">
+                                        <p
+                                            class="font-mono text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            03 — BREAKPOINTS
+                                        </p>
+                                        <h2>Five widths cover every device.</h2>
+                                    </div>
+
+                                    <div
+                                        class="space-y-4 text-fg-muted *:text-sm *:leading-relaxed"
+                                    >
+                                        <p>
+                                            Modern breakpoints come from
+                                            Tailwind, Bootstrap, and Material —
+                                            they've converged on the same five
+                                            widths because that's where real
+                                            devices cluster. Use tokens, never
+                                            raw pixel values. The grid reflows
+                                            at each step: 4 columns on mobile, 8
+                                            on tablet, 12 from laptop up.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <figure class="flex flex-col gap-s">
+                                    <div
+                                        class="divide-y divide-border border border-border font-mono"
+                                    >
+                                        <div
+                                            class="grid grid-cols-[auto_1fr_auto] place-items-center gap-s-l p-5 md:gap-xl-2xl"
+                                        >
+                                            <div
+                                                class="space-y-1 text-xs font-semibold tracking-wider"
+                                            >
+                                                <p class="text-fg-muted">
+                                                    MOBILE
+                                                </p>
+                                                <p>--bp-sm</p>
+                                            </div>
+                                            <div
+                                                class="relative h-4/5 w-full bg-bg-subtle"
+                                            >
+                                                <div
+                                                    class="h-full w-1/5 border-r-3 border-brand bg-brand-subtle"
+                                                ></div>
+                                                <div
+                                                    class="absolute inset-0 grid items-center justify-start pl-xs-s text-2xs leading-normal tabular-nums md:text-sm"
+                                                >
+                                                    0–639px · 4 cols · 16px
+                                                    gutter
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-fg-muted">
+                                                100%<span class="text-bg"
+                                                    >00</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-[auto_1fr_auto] place-items-center gap-s-l p-5 md:gap-xl-2xl"
+                                        >
+                                            <div
+                                                class="space-y-1 text-xs font-semibold tracking-wider"
+                                            >
+                                                <p class="text-fg-muted">
+                                                    TABLET
+                                                </p>
+                                                <p>--bp-md</p>
+                                            </div>
+                                            <div
+                                                class="relative h-4/5 w-full bg-bg-subtle"
+                                            >
+                                                <div
+                                                    class="h-full w-2/5 border-r-3 border-brand bg-brand-subtle"
+                                                ></div>
+                                                <div
+                                                    class="absolute inset-0 grid items-center justify-start pl-xs-s text-2xs leading-normal tabular-nums md:text-sm"
+                                                >
+                                                    640px–1023px · 8 cols · 24px
+                                                    gutter
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-fg-muted">
+                                                640px<span class="text-bg"
+                                                    >0</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-[auto_1fr_auto] place-items-center gap-s-l p-5 md:gap-xl-2xl"
+                                        >
+                                            <div
+                                                class="space-y-1 text-xs font-semibold tracking-wider"
+                                            >
+                                                <p class="text-fg-muted">
+                                                    LAPTOP
+                                                </p>
+                                                <p>--bp-lg</p>
+                                            </div>
+                                            <div
+                                                class="relative h-4/5 w-full bg-bg-subtle"
+                                            >
+                                                <div
+                                                    class="h-full w-3/5 border-r-3 border-brand bg-brand-subtle"
+                                                ></div>
+                                                <div
+                                                    class="absolute inset-0 grid items-center justify-start pl-xs-s text-2xs leading-normal tabular-nums md:text-sm"
+                                                >
+                                                    1024–1279px · 12 cols · 32px
+                                                    gutter
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-fg-muted">
+                                                1024px
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-[auto_1fr_auto] place-items-center gap-s-l p-5 md:gap-xl-2xl"
+                                        >
+                                            <div
+                                                class="space-y-1 text-xs font-semibold tracking-wider"
+                                            >
+                                                <p class="text-fg-muted">
+                                                    DESKTOP
+                                                </p>
+                                                <p>--bp-xl</p>
+                                            </div>
+                                            <div
+                                                class="relative h-4/5 w-full bg-bg-subtle"
+                                            >
+                                                <div
+                                                    class="h-full w-4/5 border-r-3 border-brand bg-brand-subtle"
+                                                ></div>
+                                                <div
+                                                    class="absolute inset-0 grid items-center justify-start pl-xs-s text-2xs leading-normal tabular-nums md:text-sm"
+                                                >
+                                                    1280–1535px · 12 cols · 32px
+                                                    gutter
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-fg-muted">
+                                                1200px
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="grid grid-cols-[auto_1fr_auto] place-items-center gap-s-l p-5 md:gap-xl-2xl"
+                                        >
+                                            <div
+                                                class="space-y-1 text-xs font-semibold tracking-wider"
+                                            >
+                                                <p
+                                                    class="text-fg-muted uppercase"
+                                                >
+                                                    WIDE
+                                                </p>
+                                                <p>--bp-2xl</p>
+                                            </div>
+                                            <div
+                                                class="relative h-4/5 w-full bg-bg-subtle"
+                                            >
+                                                <div
+                                                    class="h-full w-5/5 border-r-3 border-brand bg-brand-subtle"
+                                                ></div>
+                                                <div
+                                                    class="absolute inset-0 grid items-center justify-start pl-xs-s text-2xs leading-normal tabular-nums md:text-sm"
+                                                >
+                                                    1536px+ · 12 cols · 40px
+                                                    gutter
+                                                </div>
+                                            </div>
+                                            <div class="text-xs text-fg-muted">
+                                                1440px
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <figcaption class="text-sm text-fg-muted">
+                                        <span
+                                            class="leading-relaxed font-semibold text-fg"
+                                            >Mobile-first.</span
+                                        >
+                                        Default styles target the smallest
+                                        width. Each breakpoint adds — never
+                                        subtracts. A media query that turns
+                                        something off is a sign the base case
+                                        was wrong.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="container space-y-10 py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-m lg:grid lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div class="space-y-4">
+                                        <p
+                                            class="font-mono text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            04 — Container widths
+                                        </p>
+                                        <h2>
+                                            Width is content-type, not
+                                            page-type.
+                                        </h2>
+                                    </div>
+
+                                    <div
+                                        class="space-y-4 text-fg-muted *:text-sm *:leading-relaxed"
+                                    >
+                                        <p>
+                                            A single container width forces
+                                            marketing pages, prose, and
+                                            dashboards into the same shape.
+                                            Different content has different
+                                            optimal widths — prose at 65ch,
+                                            marketing hero at 1280px, dashboards
+                                            full-bleed. The container is a
+                                            content property, not a page
+                                            property.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="parent grid grid-cols-[auto_auto_1fr] items-center gap-x-m gap-y-0 border border-border font-mono text-xs leading-relaxed **:not-[div:nth-child(3n-1)]:px-3 max-md:items-baseline [&>div_div:not(:first-child)]:text-fg-muted [&>div:nth-child(odd)>div]:bg-bg-subtle [&>div>div]:py-3 [&>div>div:nth-child(3n-1)]:px-2"
+                                >
+                                    <div
+                                        class="contents tracking-widest text-fg-muted"
+                                    >
+                                        <div class="uppercase">CONTAINER</div>
+                                        <div class="uppercase">MAX WIDTH</div>
+                                        <div class="uppercase">USED FOR</div>
+                                    </div>
+                                    <div class="contents">
+                                        <div>Prose</div>
+                                        <div>65ch</div>
+                                        <div>
+                                            Long-form articles, docs body, blog
+                                            posts
+                                        </div>
+                                    </div>
+                                    <div class="contents">
+                                        <div>Reading</div>
+                                        <div>720px</div>
+                                        <div>
+                                            Forms, settings pages, single-column
+                                            content
+                                        </div>
+                                    </div>
+                                    <div class="contents">
+                                        <div>Default app</div>
+                                        <div>1200px</div>
+                                        <div>
+                                            Standard product surfaces —
+                                            dashboards, settings, lists
+                                        </div>
+                                    </div>
+                                    <div class="contents">
+                                        <div>Wide app</div>
+                                        <div>1440px</div>
+                                        <div>
+                                            Data-heavy dashboards, tables,
+                                            multi-panel views
+                                        </div>
+                                    </div>
+                                    <div class="contents">
+                                        <div>Marketing hero</div>
+                                        <div>1280px</div>
+                                        <div>
+                                            Landing pages, marketing — visual
+                                            breathing room
+                                        </div>
+                                    </div>
+                                    <div class="contents">
+                                        <div>Full-bleed</div>
+                                        <div>100%</div>
+                                        <div>
+                                            Editorial covers, media, immersive
+                                            content
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="container space-y-10 py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-m lg:grid lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div class="space-y-3">
+                                        <p
+                                            class="font-mono text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            05 — Composition primitives
+                                        </p>
+                                        <h2>
+                                            Four primitives compose every
+                                            product layout.
+                                        </h2>
+                                    </div>
+
+                                    <div
+                                        class="space-y-4 text-fg-muted *:text-sm *:leading-relaxed"
+                                    >
+                                        <p>
+                                            From Heydon Pickering's Every
+                                            Layout: ninety percent of the
+                                            layouts a product ever needs are
+                                            some composition of Stack, Cluster,
+                                            Grid, and Sidebar. Build them once
+                                            as primitive components — the rest
+                                            of the system reads as nesting.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="space-y-9">
+                                    <div
+                                        class="grid grid-cols-1 gap-s"
+                                        id="compositions"
+                                    >
+                                        <div
+                                            class="c-row-1 grid grid-cols-1 grid-rows-[auto_auto_1fr_auto] gap-s *:pb-5 md:grid-cols-2"
+                                        >
+                                            <!-- ------------------------------- stack -------------------------------- -->
+                                            <div
+                                                class="card row-span-4 grid grid-rows-subgrid divide-y divide-border border border-border"
+                                            >
+                                                <div
+                                                    class="space-y-2xs bg-bg-subtle p-5 duration-9000 *:h-8 *:w-full "
+                                                >
+                                                    <div
+                                                        class="bg-fg/70 animate-pulse "
+                                                    ></div>
+                                                    <div class="bg-fg/55"></div>
+                                                    <div
+                                                        class="bg-fg/40 delay-4000"
+                                                    ></div>
+                                                </div>
+                                                <div class="contents *:px-5">
+                                                    <div
+                                                        class="flex items-baseline justify-between"
+                                                    >
+                                                        <p
+                                                            class="font-mono text-xs tracking-widest text-fg-muted uppercase"
+                                                        >
+                                                            01
+                                                        </p>
+                                                        <h3>Stack</h3>
+                                                    </div>
+                                                    <p
+                                                        class="text-sm leading-relaxed text-fg-muted"
+                                                    >
+                                                        Children stack with
+                                                        consistent gap. The most
+                                                        common layout in any
+                                                        product surface —
+                                                        paragraphs, form fields,
+                                                        card lists.
+                                                    </p>
+                                                    <code
+                                                        class="rounded-sm font-mono text-2xs leading-relaxed tracking-widest"
+                                                    >
+                                                        <div
+                                                            class="bg-bg-subtle p-2"
+                                                        >
+                                                            display: flex;
+                                                            flex-direction:
+                                                            column; gap:
+                                                            var(--space-4)
+                                                        </div>
+                                                    </code>
+                                                </div>
+                                            </div>
+                                            <!-- ------------------------------ stack end ------------------------------ -->
+                                            <!-- ------------------------------- cluster-start ------------------------------- -->
+                                            <div
+                                                class="card row-span-4 grid grid-rows-subgrid divide-y divide-border border border-border"
+                                            >
+                                                <div
+                                                    class="flex flex-wrap content-center gap-xs-s bg-bg-subtle p-5 [&>div]:h-3 [&>div]:bg-fg/55"
+                                                >
+                                                    <div class="w-14"></div>
+                                                    <div class="w-22"></div>
+                                                    <div class="w-18"></div>
+                                                    <div class="w-26"></div>
+                                                    <div class="w-16"></div>
+                                                    <div class="w-30"></div>
+                                                    <div class="w-20"></div>
+                                                </div>
+                                                <div class="contents *:px-5">
+                                                    <div
+                                                        class="flex items-baseline justify-between"
+                                                    >
+                                                        <p
+                                                            class="font-mono text-xs tracking-widest text-fg-muted uppercase"
+                                                        >
+                                                            02
+                                                        </p>
+                                                        <h3>Cluster</h3>
+                                                    </div>
+                                                    <p
+                                                        class="text-sm leading-relaxed text-fg-muted"
+                                                    >
+                                                        Children wrap when they
+                                                        run out of room. For tag
+                                                        rows, toolbars, button
+                                                        groups — anything that's
+                                                        a collection of small
+                                                        things.
+                                                    </p>
+                                                    <code
+                                                        class="rounded-sm font-mono text-2xs leading-relaxed tracking-widest"
+                                                    >
+                                                        <div
+                                                            class="bg-bg-subtle p-2"
+                                                        >
+                                                            display: flex;
+                                                            flex-wrap: wrap;
+                                                            gap: var(--space-2)
+                                                        </div>
+                                                    </code>
+                                                </div>
+                                            </div>
+                                            <!-- ----------------------------- cluster-end ----------------------------- -->
+                                        </div>
+                                        <div
+                                            class="c-row-2 grid grid-cols-1 grid-rows-[auto_auto_1fr_auto] gap-s *:pb-5 md:grid-cols-2"
+                                        >
+                                            <!-- ----------------------------- grid-start ------------------------------ -->
+                                            <div
+                                                class="card row-span-4 grid grid-rows-subgrid divide-y divide-border border border-border"
+                                            >
+                                                <div
+                                                    class="[&amp;&gt;div]:bg-fg/55 grid grid-cols-3 gap-2xs bg-bg-subtle p-5"
+                                                >
+                                                    <div
+                                                        class="aspect-3/2"
+                                                    ></div>
+                                                    <div
+                                                        class="aspect-3/2"
+                                                    ></div>
+                                                    <div
+                                                        class="aspect-3/2"
+                                                    ></div>
+                                                    <div
+                                                        class="aspect-3/2"
+                                                    ></div>
+                                                    <div
+                                                        class="aspect-3/2"
+                                                    ></div>
+                                                    <div
+                                                        class="aspect-3/2"
+                                                    ></div>
+                                                </div>
+                                                <div class="contents *:px-5">
+                                                    <div
+                                                        class="flex items-baseline justify-between"
+                                                    >
+                                                        <p
+                                                            class="font-mono text-xs tracking-widest text-fg-muted uppercase"
+                                                        >
+                                                            03
+                                                        </p>
+                                                        <h3>Grid</h3>
+                                                    </div>
+                                                    <p
+                                                        class="text-sm leading-relaxed text-fg-muted"
+                                                    >
+                                                        Cells of equal width
+                                                        that reflow at
+                                                        breakpoints. Card grids,
+                                                        image galleries,
+                                                        dashboard tiles.
+                                                    </p>
+                                                    <code
+                                                        class="rounded-sm font-mono text-2xs leading-relaxed tracking-widest"
+                                                    >
+                                                        <div
+                                                            class="bg-bg-subtle p-2"
+                                                        >
+                                                            display: grid;
+                                                            grid-template-columns:
+                                                            repeat(auto-fit,
+                                                            minmax(280px, 1fr))
+                                                        </div>
+                                                    </code>
+                                                </div>
+                                            </div>
+                                            <!-- ------------------------------ Grid-end ------------------------------- -->
+                                            <!-- ---------------------------- Sidebar-start ---------------------------- -->
+                                            <div
+                                                class="card row-span-4 grid grid-rows-subgrid divide-y divide-border border border-border"
+                                            >
+                                                <div
+                                                    class="grid grid-cols-[85px_1fr] place-content-center gap-xs bg-bg-subtle p-5"
+                                                >
+                                                    <aside
+                                                        class="space-y-2 [&>div]:h-7"
+                                                    >
+                                                        <div
+                                                            class="bg-fg/70"
+                                                        ></div>
+                                                        <div
+                                                            class="bg-fg/50"
+                                                        ></div>
+                                                        <div
+                                                            class="bg-fg/50"
+                                                        ></div>
+                                                        <div
+                                                            class="bg-fg/50"
+                                                        ></div>
+                                                    </aside>
+                                                    <div
+                                                        class="main_content space-y-2 [&>div]:h-4"
+                                                    >
+                                                        <div
+                                                            class="w-3/4 bg-fg/30"
+                                                        ></div>
+                                                        <div
+                                                            class="bg-fg/30"
+                                                        ></div>
+                                                        <div
+                                                            class="w-6/7 bg-fg/30"
+                                                        ></div>
+                                                        <div
+                                                            class="w-4/6 bg-fg/30"
+                                                        ></div>
+                                                        <div
+                                                            class="bg-fg/30"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                                <div class="contents *:px-5">
+                                                    <div
+                                                        class="flex items-baseline justify-between"
+                                                    >
+                                                        <p
+                                                            class="font-mono text-xs tracking-widest text-fg-muted uppercase"
+                                                        >
+                                                            04
+                                                        </p>
+                                                        <h3>Sidebar</h3>
+                                                    </div>
+                                                    <p
+                                                        class="text-sm leading-relaxed text-fg-muted"
+                                                    >
+                                                        One fixed column, one
+                                                        fluid column. Marketing
+                                                        pages, docs pages,
+                                                        settings — anywhere a
+                                                        navigation rail meets
+                                                        content.
+                                                    </p>
+                                                    <code
+                                                        class="rounded-sm font-mono text-2xs leading-relaxed tracking-widest"
+                                                    >
+                                                        <div
+                                                            class="bg-bg-subtle p-2"
+                                                        >
+                                                            display: grid;
+                                                            grid-template-columns:
+                                                            240px 1fr
+                                                        </div>
+                                                    </code>
+                                                </div>
+                                            </div>
+                                            <!-- ----------------------------- Sidebar-end ----------------------------- -->
+                                            <!-- --------------------------- Heuristic-start --------------------------- -->
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="space-y-xs-s border border-border bg-bg-subtle p-s-l"
+                                    >
+                                        <div
+                                            class="text-2xs font-semibold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            HEURISTIC
+                                        </div>
+                                        <p
+                                            class="tracking-relaxed text-sm font-thin text-pretty"
+                                        >
+                                            <span class="font-semibold"
+                                                >The parent owns the
+                                                layout.</span
+                                            >
+                                            <span class="text-fg">
+                                                Components never set their own
+                                                margins — a Card knows nothing
+                                                about being in a Stack. That's
+                                                why the same Card composes
+                                                inside a Grid, a Cluster, or a
+                                                Sidebar without modification.
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="container space-y-10 py-10 md:py-14">
+                                <div
+                                    class="grid grid-cols-1 gap-m lg:grid lg:grid-cols-[1fr_2fr]"
+                                >
+                                    <div class="space-y-3">
+                                        <p
+                                            class="font-mono text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            06 — Anti-patterns
+                                        </p>
+                                        <h2>
+                                            Four primitives compose every
+                                            product layout.
+                                        </h2>
+                                    </div>
+                                    <div
+                                        class="space-y-4 text-fg-muted *:text-sm *:leading-relaxed"
+                                    >
+                                        <p>
+                                            Pulled from real design-system
+                                            audits. Each one feels right week
+                                            one — and breaks the system month
+                                            six.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- ------------------------- anti-pattern start -------------------------- -->
+                                <div class="rules-container space-y-4">
+                                    <div class="block border border-border">
+                                        <div
+                                            class="rule-card grid gap-m-l p-m-l md:grid md:grid-cols-[auto_1fr]"
+                                        >
+                                            <div
+                                                class="lhs space-y-4 overflow-hidden md:w-64"
+                                            >
+                                                <div
+                                                    class="grid w-max grid-cols-2 items-center gap-1 font-mono text-xs leading-0 text-fg-muted"
+                                                >
+                                                    <span>01</span>
+                                                    <svg
+                                                        class="tabler-icon tabler-icon-alert-triangle h-4 w-4 text-warning"
+                                                        fill="none"
+                                                        height="24"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        width="24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M12 9v4"
+                                                        ></path>
+                                                        <path
+                                                            d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
+                                                        ></path>
+                                                        <path
+                                                            d="M12 16h.01"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <h3
+                                                    class="[text-box-trim: trim-both] font-semibold tracking-widest"
+                                                >
+                                                    Fixed-width containers
+                                                </h3>
+                                            </div>
+                                            <div class="rhs space-y-4">
+                                                <div
+                                                    class="rules grid-cols-2 gap-2xs text-xs *:p-5 max-md:space-y-3 md:grid"
+                                                >
+                                                    <div
+                                                        class="avoid border-error-rule space-y-2 border bg-error/5"
+                                                    >
+                                                        <p
+                                                            class="font-bold tracking-wider text-error"
+                                                        >
+                                                            AVOID
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                            >max-width: 1200px
+                                                            on every page</code
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="prefer border-success-rule space-y-2 border bg-success/5"
+                                                    >
+                                                        <p
+                                                            class="fg-success-header font-bold tracking-wider uppercase"
+                                                        >
+                                                            prefer
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                            >max-width per
+                                                            content type · prose
+                                                            65ch · full-bleed
+                                                            editorial</code
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <p
+                                                    class="text-sm leading-relaxed text-fg-subtle"
+                                                >
+                                                    Marketing pages, prose, and
+                                                    dashboards have different
+                                                    optimal widths. One
+                                                    container width forces
+                                                    everything into a shape it
+                                                    doesn't want — wide
+                                                    marketing or narrow
+                                                    dashboards.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block border border-border">
+                                        <div
+                                            class="rule-card grid gap-m-l p-m-l md:grid md:grid-cols-[auto_1fr]"
+                                        >
+                                            <div
+                                                class="lhs space-y-4 overflow-hidden md:w-64"
+                                            >
+                                                <div
+                                                    class="grid w-max grid-cols-2 items-center gap-1 font-mono text-xs leading-0 text-fg-muted"
+                                                >
+                                                    <span>02</span>
+                                                    <svg
+                                                        class="tabler-icon tabler-icon-alert-triangle h-4 w-4 text-warning"
+                                                        fill="none"
+                                                        height="24"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        width="24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M12 9v4"
+                                                        ></path>
+                                                        <path
+                                                            d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
+                                                        ></path>
+                                                        <path
+                                                            d="M12 16h.01"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <h3
+                                                    class="[text-box-trim: trim-both] font-semibold tracking-widest"
+                                                >
+                                                    Layouts inside components
+                                                </h3>
+                                            </div>
+                                            <div class="rhs space-y-4">
+                                                <div
+                                                    class="rules grid-cols-2 gap-2xs text-xs *:p-5 max-md:space-y-3 md:grid"
+                                                >
+                                                    <div
+                                                        class="avoid border-error-rule space-y-2 border bg-error/5"
+                                                    >
+                                                        <p
+                                                            class="font-bold tracking-wider text-error"
+                                                        >
+                                                            AVOID
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                            >Card has 32px
+                                                            margin-top</code
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="prefer border-success-rule space-y-2 border bg-success/5"
+                                                    >
+                                                        <p
+                                                            class="fg-success-header font-bold tracking-wider uppercase"
+                                                        >
+                                                            prefer
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                            >Card sits inside a
+                                                            Stack with gap:
+                                                            32px</code
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <p
+                                                    class="text-sm leading-relaxed text-fg-subtle"
+                                                >
+                                                    Components shouldn't know
+                                                    what's around them. Layout
+                                                    belongs to the parent so the
+                                                    child stays composable in
+                                                    every context — no margin
+                                                    override, no last-child
+                                                    hack.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block border border-border">
+                                        <div
+                                            class="rule-card grid gap-m-l p-m-l md:grid md:grid-cols-[auto_1fr]"
+                                        >
+                                            <div
+                                                class="lhs space-y-4 overflow-hidden md:w-64"
+                                            >
+                                                <div
+                                                    class="flex items-center gap-1.5 font-mono text-xs leading-0 text-fg-muted"
+                                                >
+                                                    <span>03</span>
+                                                    <svg
+                                                        class="tabler-icon tabler-icon-alert-triangle h-4 w-4 text-warning"
+                                                        fill="none"
+                                                        height="24"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        width="24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M12 9v4"
+                                                        ></path>
+                                                        <path
+                                                            d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
+                                                        ></path>
+                                                        <path
+                                                            d="M12 16h.01"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <h3
+                                                    class="[text-box-trim: trim-both] font-semibold tracking-widest"
+                                                >
+                                                    Magic-number breakpoints
+                                                </h3>
+                                            </div>
+                                            <div class="rhs space-y-4">
+                                                <div
+                                                    class="rules grid-cols-2 gap-2xs text-xs *:p-5 max-md:space-y-3 md:grid"
+                                                >
+                                                    <div
+                                                        class="avoid border-error-rule space-y-2 border bg-error/5"
+                                                    >
+                                                        <p
+                                                            class="font-bold tracking-wider text-error"
+                                                        >
+                                                            AVOID
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                        >
+                                                            @media (min-width:
+                                                            873px)
+                                                        </code>
+                                                    </div>
+                                                    <div
+                                                        class="prefer border-success-rule space-y-2 border bg-success/5"
+                                                    >
+                                                        <p
+                                                            class="fg-success-header font-bold tracking-wider uppercase"
+                                                        >
+                                                            prefer
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                        >
+                                                            @media (min-width:
+                                                            var(--bp-md))
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <p
+                                                    class="text-sm leading-relaxed text-fg-subtle"
+                                                >
+                                                    Cherry-picked breakpoints
+                                                    fragment the system. A
+                                                    handful of tokens cover
+                                                    every real device — adding a
+                                                    custom width for one page
+                                                    becomes the start of a
+                                                    maintenance nightmare.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block border border-border">
+                                        <div
+                                            class="rule-card grid gap-m-l p-m-l md:grid md:grid-cols-[auto_1fr]"
+                                        >
+                                            <div
+                                                class="lhs space-y-4 overflow-hidden md:w-64"
+                                            >
+                                                <div
+                                                    class="grid w-max grid-cols-2 items-center gap-1 font-mono text-xs leading-0 text-fg-muted"
+                                                >
+                                                    <span>04</span>
+                                                    <svg
+                                                        class="tabler-icon tabler-icon-alert-triangle h-4 w-4 text-warning"
+                                                        fill="none"
+                                                        height="24"
+                                                        stroke="currentColor"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        width="24"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <path
+                                                            d="M12 9v4"
+                                                        ></path>
+                                                        <path
+                                                            d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
+                                                        ></path>
+                                                        <path
+                                                            d="M12 16h.01"
+                                                        ></path>
+                                                    </svg>
+                                                </div>
+                                                <h3
+                                                    class="[text-box-trim: trim-both] font-semibold tracking-widest"
+                                                >
+                                                    Mobile as a separate site
+                                                </h3>
+                                            </div>
+                                            <div class="rhs space-y-4">
+                                                <div
+                                                    class="rules grid-cols-2 gap-2xs text-xs *:p-5 max-md:space-y-3 md:grid"
+                                                >
+                                                    <div
+                                                        class="avoid border-error-rule space-y-2 border bg-error/5"
+                                                    >
+                                                        <p
+                                                            class="font-bold tracking-wider text-error"
+                                                        >
+                                                            AVOID
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                            >Hide the desktop
+                                                            nav and ship
+                                                            m.example.com</code
+                                                        >
+                                                    </div>
+                                                    <div
+                                                        class="prefer border-success-rule space-y-2 border bg-success/5"
+                                                    >
+                                                        <p
+                                                            class="fg-success-header font-bold tracking-wider uppercase"
+                                                        >
+                                                            prefer
+                                                        </p>
+                                                        <code
+                                                            class="font-mono font-semibold"
+                                                            >Same components ·
+                                                            same data ·
+                                                            responsive at the
+                                                            layout layer</code
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <p
+                                                    class="text-sm leading-relaxed text-fg-subtle"
+                                                >
+                                                    Two codebases, two
+                                                    source-of-truths, two bugs.
+                                                    Modern layouts shrink and
+                                                    reflow — the same Stack and
+                                                    Grid primitives work at
+                                                    every width with
+                                                    breakpoint-aware sizing.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- -------------------------- anti-pattern end --------------------------- -->
+                                <div
+                                    class="*:items-baseline-first block space-y-4 *:flex *:gap-xs *:rounded-xs *:border *:border-border *:p-5 md:grid md:grid-cols-3 md:gap-s-m *:md:m-0"
+                                >
+                                    <div>
+                                        <svg
+                                            class="tabler-icon tabler-icon-check mt-0.5 h-4 w-4 shrink-0 text-brand"
+                                            fill="none"
+                                            height="24"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path d="M5 12l5 5l10 -10"></path>
+                                        </svg>
+                                        <p
+                                            class="text-foreground text-sm leading-relaxed"
+                                        >
+                                            Layout belongs to the parent.
+                                            Components ship margin-free.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <svg
+                                            class="tabler-icon tabler-icon-check mt-0.5 h-4 w-4 shrink-0 text-brand"
+                                            fill="none"
+                                            height="24"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path d="M5 12l5 5l10 -10"></path>
+                                        </svg>
+                                        <p
+                                            class="text-foreground text-sm leading-relaxed"
+                                        >
+                                            Container width is per content type,
+                                            not per page.
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <svg
+                                            class="tabler-icon tabler-icon-check mt-0.5 h-4 w-4 shrink-0 text-brand"
+                                            fill="none"
+                                            height="24"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                            width="24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path d="M5 12l5 5l10 -10"></path>
+                                        </svg>
+                                        <p
+                                            class="text-foreground text-sm leading-relaxed"
+                                        >
+                                            Compose Stack · Cluster · Grid ·
+                                            Sidebar — don't reinvent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="border-border not-last:border-b">
+                            <div class="container py-10 md:py-14">
+                                <div
+                                    class="space-y-3 border border-border bg-bg-subtle p-m"
+                                >
+                                    <div class="space-y-3">
+                                        <p
+                                            class="text-2xs font-bold tracking-widest text-fg-muted uppercase"
+                                        >
+                                            continue
+                                        </p>
+                                        <h2
+                                            class="text-2xl leading-tight tracking-wide text-fg md:text-3xl"
+                                        >
+                                            Layout decides shape. Accessibility
+                                            decides reach.
+                                        </h2>
+                                    </div>
+                                    <div class="space-y-4.5">
+                                        <p
+                                            class="max-w-[65ch] text-sm leading-relaxed text-fg-muted"
+                                        >
+                                            A pixel-perfect grid that nobody can
+                                            use isn't a system. The
+                                            accessibility foundation covers the
+                                            four WCAG principles, keyboard
+                                            navigation, semantic HTML, and
+                                            screen-reader testing — the work
+                                            that makes the layout reach
+                                            everyone.
+                                        </p>
+                                        <div
+                                            class="inline-flex flex-wrap gap-x-s gap-y-xs text-sm *:inline-flex *:items-center *:justify-between *:gap-2xs *:rounded-xs *:px-4 *:py-2 **:transition-all **:duration-200 *:focus-visible:ring-2 *:focus-visible:ring-brand *:focus-visible:ring-offset-2 *:focus-visible:ring-offset-bg *:focus-visible:outline-none"
+                                        >
+                                            <a
+                                                class="group bg-black dark:bg-white text-white dark:text-black hover:bg-brand hover:text-brand-fg"
+                                                href="/"
+                                                ><span
+                                                    class="font-medium tracking-wide"
+                                                    >Read the accessibility
+                                                    foundation</span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right h-3.5 w-3.5 text-brand group-hover:text-fg"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="4"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></a>
+                                            <a
+                                                class="group border border-fg-muted/50 bg-bg font-semibold hover:border-brand"
+                                                href="/"
+                                                ><span
+                                                    >Open the grid builder</span
+                                                ><svg
+                                                    class="tabler-icon tabler-icon-arrow-up-right h-3.5 w-3.5 group-hover:text-brand"
+                                                    fill="none"
+                                                    height="24"
+                                                    stroke="currentColor"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M17 7l-10 10"
+                                                    ></path>
+                                                    <path
+                                                        d="M8 7l9 0l0 9"
+                                                    ></path></svg
+                                            ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <section>
+                            <div class="container space-y-10 py-10 md:py-14"></div>
+                        </section> -->
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- ---------------------------- footer-start ----------------------------- -->
+        <footer class="border-t border-border bg-bg">
+            <div class="container divide-y divide-border py-10 md:py-14">
+                <div
+                    class="grid grid-cols-1 items-start pb-l **:text-fg-muted md:grid-cols-[1fr_auto] md:justify-between"
+                >
+                    <div class="space-y-4 text-sm">
+                        <p class="text-xs font-bold tracking-widest uppercase">
+                            DesignSystems.One
+                        </p>
+                        <p class="max-w-md leading-relaxed">
+                            A curated gallery of 74 real-world design systems,
+                            foundations and guidelines from fourteen years of
+                            practice, plus free interactive tools.
+                        </p>
+                    </div>
+                    <nav
+                        aria-label="Footer"
+                        class="space-y-3 **:font-sans **:text-sm"
+                    >
+                        <p class="pl-2 font-bold tracking-widest uppercase">
+                            SITE
+                        </p>
+                        <ul
+                            class="max-md:gap-x-sm max-[376px]:p0 grid grid-cols-[auto_auto_auto] font-thin transition-all duration-200 *:w-max *:pl-2 **:leading-tight **:duration-200 *:hover:border-l-2 *:hover:border-brand **:hover:text-fg max-[375px]:grid-cols-2 md:block md:space-y-2"
+                        >
+                            <li><a href="/">Tools</a></li>
+                            <li><a href="/">Design Systems</a></li>
+                            <li><a href="/">Foundations</a></li>
+                            <li><a href="/">Glossary</a></li>
+                            <li><a href="/">Registry</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Support the project</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div
+                    class="flex w-full flex-col items-center justify-center gap-s pt-m text-xs text-fg-muted md:flex-row md:justify-between"
+                >
+                    <p class="max-sm:text-center">
+                        DesignSystems.One © 2026 ·<br class="max-sm:block" />
+                        Built by
+                        <a
+                            class="font-[poppins] font-light tracking-wide text-fg capitalize underline decoration-fg-muted/40 underline-offset-2 transition-all hover:text-brand hover:decoration-brand hover:underline-offset-4"
+                            href="/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >Usifo Emmanuel Sunday</a
+                        >
+                    </p>
+                    <p>Design systems, explained.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- ----------------------------- footer-end ------------------------------ -->
+    </body>
+</html>

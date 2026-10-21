@@ -1,0 +1,25 @@
+{
+	"dependencies": {
+		"@tailwindcss/vite": "^4.3.3",
+		"tailwindcss": "^4.3.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.5",
+		"@tailwindcss/typography": "^0.5.20",
+		"prettier": "^3.9.6",
+		"prettier-plugin-tailwindcss": "^0.8.1",
+		"vite": "^8.1.5"
+	},
+	"name": "vite-project-vanilla_js",
+	"private": true,
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"format": "prettier --write .",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"preview": "vite preview"
+	},
+	"type": "module",
+	"version": "0.0.0"
+}

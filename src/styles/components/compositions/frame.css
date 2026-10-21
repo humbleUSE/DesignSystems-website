@@ -1,0 +1,6 @@
+@layer components {
+	.frame {
+		aspect-ratio: var(--frame-ratio, 16 / 9);
+		overflow: hidden;
+	}
+}

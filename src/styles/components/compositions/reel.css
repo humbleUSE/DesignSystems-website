@@ -1,0 +1,9 @@
+@layer components {
+	.reel {
+		display: flex;
+		gap: var(--space-s);
+
+		overflow-x: auto;
+		scrollbar-width: var(--scroll-width, thin);
+	}
+}
