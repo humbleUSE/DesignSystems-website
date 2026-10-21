@@ -1,18 +1,21 @@
 # DesignSystems.One — Website Clone 🎨
 
-A responsive design-system showcase inspired by DesignSystems.One. This project explores **CUBE CSS**, reusable layout patterns, design tokens, and fluid typography in a practical website.
+A responsive design-system showcase inspired by DesignSystems.One. The project focuses first on how the interface adapts across screen sizes, and on using **Tailwind CSS v4 alongside CUBE CSS** as complementary tools—without one undermining or conflicting with the other.
 
 ## 🎯 Project purpose
 
-This project demonstrates how a clear CSS architecture and shared design decisions can make an interface easier to build, adapt, and maintain. It brings together CUBE CSS principles and Tailwind CSS v4, using custom properties and reusable CSS patterns alongside utility classes.
+This project demonstrates responsive design across a range of viewport sizes while exploring how Tailwind CSS utilities can coexist with a CUBE CSS architecture. CUBE CSS provides a clear structure for reusable compositions, component blocks, utilities, and contextual exceptions; Tailwind CSS offers utility classes for styling directly in markup. Used with deliberate boundaries and shared design tokens, both approaches can contribute to the same interface without competing for the same responsibilities.
+
+Supporting goals include showcasing a consistent design system, fluid typography and spacing, and reusable CSS patterns that make the site easier to adapt and maintain.
 
 ## ✨ What the project demonstrates
 
-- **CUBE CSS architecture:** Styles are organized around compositions, utilities, blocks, and exceptions. This separates reusable layout behavior from component styling and contextual overrides.
-- **Responsive design:** The layouts use flexible compositions and responsive styling to adapt to different viewport sizes.
-- **Design system and tokens:** Shared tokens define colors, spacing, typography, radii, and shadows, helping keep visual decisions consistent and easier to update.
-- **Fluid typography and spacing:** Token scales use fluid values so type and spacing can adjust smoothly across viewport sizes.
-- **Reusable CSS architecture:** Compositions such as `flow`, `stack`, `cluster`, `grid`, `sidebar`, and `switcher` provide repeatable layout patterns. Blocks provide styles for interface elements such as buttons, cards, navigation, and forms.
+1. **Responsive design:** Flexible layouts and responsive styling adapt the site across different screen sizes and viewport widths.
+2. **Tailwind CSS alongside CUBE CSS:** Tailwind CSS v4 utilities and CUBE CSS patterns are used together, demonstrating how each can serve a distinct role in the styling system.
+3. **CUBE CSS architecture:** Styles are organized around compositions, utilities, blocks, and exceptions, distinguishing reusable layout behavior from component styling and contextual overrides.
+4. **Design system and tokens:** Shared tokens define colors, spacing, typography, radii, and shadows, helping keep visual decisions consistent and easier to update.
+5. **Fluid typography and spacing:** Token scales use fluid values so type and spacing can adjust smoothly across viewport sizes.
+6. **Reusable CSS patterns:** Compositions such as `flow`, `stack`, `cluster`, `grid`, `sidebar`, and `switcher` provide repeatable layouts. Blocks provide styles for elements such as buttons, cards, navigation, and forms.
 
 ## 🧰 Tech stack
 
