@@ -17,6 +17,17 @@ Supporting goals include showcasing a consistent design system, fluid typography
 5. **Fluid typography and spacing:** Token scales use fluid values so type and spacing can adjust smoothly across viewport sizes.
 6. **Reusable CSS patterns:** Compositions such as `flow`, `stack`, `cluster`, `grid`, `sidebar`, and `switcher` provide repeatable layouts. Blocks provide styles for elements such as buttons, cards, navigation, and forms.
 
+## 📄 Pages available
+
+The **Foundations** page (`index.html`) and the **Layout** page (`pages/layout.html`) are the only pages currently linked and working. Together, they provide the core examples needed to demonstrate this project’s goals. Other pages may be added and linked as the project develops.
+
+## 📸 Responsive screenshots
+
+The `screenshots/` folder contains screenshots of the Foundations and Layout pages at a range of mobile, tablet, laptop, and desktop viewport sizes. Use them to review how the layouts adapt across screen sizes.
+
+- `screenshots/foundations-page/` — responsive captures of the Foundations page.
+- `screenshots/layout-page/` — responsive captures of the Layout page.
+
 ## 🧰 Tech stack
 
 - HTML
@@ -79,6 +90,9 @@ bun run format
 │   ├── motion.html
 │   └── spacing.html
 ├── public/                    # Public static assets
+├── screenshots/               # Responsive screenshots by page
+│   ├── foundations-page/       # Foundations page across device sizes
+│   └── layout-page/            # Layout page across device sizes
 ├── src/
 │   ├── assets/                # Fonts, icons, and images
 │   ├── main.js                # Vite entry point; imports the CSS entry point
